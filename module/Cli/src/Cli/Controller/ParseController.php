@@ -12,6 +12,8 @@ class ParseController extends AbstractActionController {
     private $authCookieFile = 'data/yandex/marketImagesGrabber/cookie.txt';
 
     public function PastelAction() {
+        echo 'sdsadsdas';die;
+        
         set_time_limit(3*60*60);
         $brandTable = $this->getServiceLocator()->get('TyresModelBrandTable');
         $brands = $brandTable->getBrands(['tyresCountLoad' => true, 'order' => 'name', 'tyresCountGreaterThan' => 0, ]);

@@ -31,9 +31,9 @@ return array(
                     )
                 ],
                 
-                'pastel.su' => array(
+                'pastelsu' => array(
                     'options' => array(
-                        'route'    => 'pastel.su',
+                        'route'    => 'pastelsu',
                         'defaults' => array(
                             'controller' => 'Cli\Controller\Parse',
                             'action'     => 'Pastel'
@@ -57,23 +57,6 @@ return array(
             'GetImportFiles'    => 'Cli\Controller\Plugin\GetImportFiles',
         )
     ),
-    'service_manager' => array(
-        'abstract_factories' => array(
-            'Zend\Log\LoggerAbstractServiceFactory',
-        ),
-    ),
-    'log' => array(
-        'Log\Console' => array(
-            'writers' => array(
-                array(
-                    'name' => 'stream',
-                    'priority' => 1000,
-                    'options' => array(
-                        'stream' => 'data/logs/console.log',
-                    ),
-                ),
-            ),
-        ),
-    ),
+
     
 );

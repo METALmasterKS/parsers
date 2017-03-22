@@ -28,9 +28,6 @@ class Module implements
     public function getAutoloaderConfig()
     {
         return array(
-	    'Zend\Loader\ClassMapAutoloader' => array(
-                __DIR__ . '/autoload_classmap.php',
-            ),
             'Zend\Loader\StandardAutoloader' => array(
                 'namespaces' => array(
                     __NAMESPACE__ => __DIR__ . '/src/' . __NAMESPACE__,
@@ -48,10 +45,7 @@ class Module implements
         return array(
             // Describe available commands
             'taskManagerDaemon'     => 'Запуск обработчика заданий, запускается по incron или cron',
-            'importTyres'     => 'Запуск импорта каталога шин',
             'loadYaMarketTyreModelsImages' => 'Загрузка фотографий моделей шин с ЯМаркет',
-            //'autoImportProcessCatalog' => 'Запуск обработки таблицы tmp_import',
-            
 
             // Describe expected parameters
             array( 'параметр',            'что делает' ),
