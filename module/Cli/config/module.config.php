@@ -39,8 +39,8 @@ return array(
                     'options' => array(
                         'route'    => 'pastelsu',
                         'defaults' => array(
-                            'controller' => 'Cli\Controller\Parse',
-                            'action'     => 'Pastel'
+                            'controller' => 'Cli\Controller\Pastel',
+                            'action'     => 'index'
                         )
                     )
                 ),
@@ -52,7 +52,7 @@ return array(
     'controllers' => array(
         'invokables' => array(
             'Cli\Controller\Index'     => 'Cli\Controller\IndexController',
-            'Cli\Controller\Parse'     => 'Cli\Controller\ParseController',
+            'Cli\Controller\Pastel'     => 'Cli\Controller\PastelController',
         ),
     ),
     'controller_plugins' => array(
