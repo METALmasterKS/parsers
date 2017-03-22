@@ -45,7 +45,7 @@ class Module implements
         return array(
             // Describe available commands
             'taskManagerDaemon'     => 'Запуск обработчика заданий, запускается по incron или cron',
-            'loadYaMarketTyreModelsImages' => 'Загрузка фотографий моделей шин с ЯМаркет',
+            'pastelsu' => 'Парсинг товаров pastel.su',
 
             // Describe expected parameters
             array( 'параметр',            'что делает' ),
